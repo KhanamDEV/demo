@@ -1,0 +1,78 @@
+@media (min-width: 1200px){
+    .container{max-width: 1300px; padding: 0; width: 80%;}
+}
+
+@media (min-width: 576px){
+    .modal-dialog{min-width: 600px;}
+}
+@media (max-width: 1600px){
+    section#wrap-user-detail .content-user-detail .select-time button{padding: 15px 0;}
+    section#wrap-user-detail .content-user-detail .select-time{padding: 55px 0;}
+    section#wrap-payment-history-repayment .box-confirm{padding: 50px;}
+    section#wrap-user-index .form-search-inline .delete-form a{display: block; text-align: right; width: 100%;}
+    body .padding-table{padding: 45px 30px 20px 30px;}
+}
+@media (max-width: 1200px){
+    body .padding-page{padding: 0 0 0 0 ;}
+    section .upload-image{margin-bottom: 50px;}
+    section#wrap-payment-history-repayment .box-confirm .message-confirm{padding: 50px;}
+    
+}
+
+@media (max-width: 991px){
+    body #main-container{padding-left: 0;}
+    header#wrap-header-user .title-header{padding-left: 0;}
+    ul.nav-tabs li a{min-width: 176px;}
+}
+
+@media (max-width: 768px){
+    nav#wrap-menu ul.menu{left: -100%;}
+    header#wrap-header-user .show-menu{display: block !important;}
+    .logo-menu{left: -100% !important;}
+    #main-container{padding-left: 0 !important;}
+    body .main-content{padding: 0 3%;}
+    nav#wrap-menu ul.menu{z-index: 9999;}
+    body .main-width-small{width: 100%; padding: 0 20px;}
+    body .padding-top{padding-top: 30px;}
+    body .padding-form{padding: 50px;}
+    section table.wrap-table thead tr th:first-child{padding-left: 35px;}
+    section table.wrap-table tbody tr td:first-child{padding-left: 35px;}
+    
+}
+
+@media (max-width: 576px){
+    section#wrap-user-detail-edit form.wrap-form .drop-file{width: 100%;}
+    section#wrap-payment-history-repayment .box-confirm{padding: 20px;}
+    .box-table{overflow-x: scroll;}
+    section table.wrap-table.responsive{min-width: 150%;}
+    .group-button button{max-width: 48%;}
+    body .padding-form{padding: 30px 20px;}
+    section#wrap-login .login{width: 100%;}
+    body .main-content{padding: 0;}
+    section table.wrap-table thead tr th:first-child{padding-left: 15px;}
+    section table.wrap-table tbody tr td:first-child{padding-left: 15px;}
+    ul.pagination li{padding: 0;}
+    section .upload-image{padding: 0; margin-bottom: 0;}
+    body .padding{padding: 15px;}
+    section#wrap-user-detail .content-user-detail .select-time button{padding: 15px 0;}
+    section#wrap-user-detail .content-user-detail .select-time{padding: 55px 15px;}
+    section#wrap-user-edit form.wrap-form .drop-file{padding: 35px;}
+    .modal .modal-dialog .modal-content{padding: 30px 10px;}
+    section#wrap-training-detail .training-detail .top-training-detail .edit{top: 20%}
+    section .name-table button{padding: 5px 20px;}
+    ul.nav-tabs{overflow: hidden; border-radius: 20px; width: 80%;}
+    .nav-tabs .nav-item{width: 100%;}
+    section#wrap-payment-history-repayment .box-confirm .message-confirm p{margin-bottom: 20px;}
+    section#wrap-payment-history-repayment .box-confirm .message-confirm{padding: 15px;}
+    section#wrap-user-index .form-search-inline form.inline-form{flex-direction: column;}
+    section#wrap-user-index .form-search-inline form.inline-form .form-group{width: 100%;}
+    section#wrap-user-index .form-search-inline form.inline-form button{width: 80%; margin: 15px auto auto auto;}
+    .button-back{text-align: center;}
+    section .title button.buton-right{position: unset;}
+    section#wrap-web-1920-11 table button{max-width: 80%;}
+}
+
+@media (max-width: 320px){
+    nav#wrap-menu ul.menu{overflow-y: scroll;}
+}
+
