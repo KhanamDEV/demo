@@ -5,14 +5,18 @@ namespace Modules\Admins\Http\Controllers;
 use App\Admin;
 use App\Helpers\Helpers;
 use App\User;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\View\View;
 
 class AdminsController extends Controller
 {
     /**
+     * Page Login
      * Display a listing of the resource.
      * @method get
      */
@@ -27,12 +31,14 @@ class AdminsController extends Controller
         }
         catch (\Exception $ex){
             abort('500');
-    }
+        }
     }
 
     /**
+     * Page Login
      * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
+     * @method post
      */
     public function postLogin(Request $request){
         try {
@@ -55,6 +61,11 @@ class AdminsController extends Controller
 
     }
 
+    /**
+     * Page success
+     * @return Factory|View
+     * @method get
+     */
     public function success(){
         try {
             $data['common'] = Helpers::titleAction([__('message.success.title')]);
