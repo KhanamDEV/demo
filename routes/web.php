@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return redirect('/admins');
+    return redirect('/admins/sign-in');
 });

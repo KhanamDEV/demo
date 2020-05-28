@@ -17,8 +17,15 @@ $("#btn-login").click(function () {
            },
            error: function (jqXHR, textStatus, errorThrown) {
                if(jqXHR.status === 500){
-                   $("#error-response").addClass("active");
-                   $("#error-response").text("User not found");
+                   console.log();
+                   if(parseInt(jqXHR.responseText) === 1){
+                       $("#error-response").addClass("active");
+                       $("#error-response").text("User not found");
+                   }
+                   else {
+                       $("#error-response").addClass("active");
+                       $("#error-response").text("Wrong password");
+                   }
                }
            }
        });

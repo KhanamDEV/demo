@@ -16,10 +16,10 @@ class CheckLogin
      */
     public function handle($request, Closure $next)
     {
-        if( Auth::check()){
-            return $next($request);
+        if( !Auth::guard('admins')->check()){
+            return redirect()->route('login');
         }
-        return redirect()->route('login');
+        return $next($request);
     }
 }
 

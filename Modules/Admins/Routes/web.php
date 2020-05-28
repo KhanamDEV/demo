@@ -12,8 +12,8 @@
 */
 
 Route::prefix('admins')->group(function() {
-    Route::get('/', 'AdminsController@index')->name('login');
-    Route::post('/','AdminsController@postLogin')->name('post-login');
+    Route::get('/sign-in', 'AdminsController@index')->name('login');
+    Route::post('/sign-in','AdminsController@postLogin')->name('post-login');
 
     Route::group(['middleware' => ['checkLogin']], function (){
        Route::get('success', 'AdminsController@success')->name('success');
